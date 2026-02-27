@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/kerala/5n-6d",
+      "destination": "/"
+    },
+    {
+      "source": "/kerala/5n-6d/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}
