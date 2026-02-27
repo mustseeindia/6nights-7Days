@@ -189,13 +189,13 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
             >
                 {/* Header */}
                 <div
-                    className="px-6 pt-6 pb-5 text-white"
+                    className="relative px-6 pt-6 pb-5 text-white"
                     style={{ backgroundColor: 'oklch(0.24 0.1 155)' }}
                 >
                     <button
     type="button"
     onClick={handleClose}
-    className="absolute top-4 right-4 text-white/70 hover:text-white text-lg font-semibold"
+    className="absolute top-4 right-4 text-white hover:text-white/80 text-2xl font-semibold z-10"
     aria-label="Close"
 >
     ×
