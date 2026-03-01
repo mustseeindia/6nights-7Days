@@ -24,7 +24,7 @@ const packages = [
         image: '/assets/luxury-kerala.dim_600x400.jpg',
         name: 'Luxury Kerala',
         duration: '5N / 6D',
-        price: '₹32,999',
+        price: '₹27,499',
         highlight: 'Premium resorts, infinity pools & exclusive experiences in God\'s Own Country.',
         interest: 'Luxury Kerala',
     },

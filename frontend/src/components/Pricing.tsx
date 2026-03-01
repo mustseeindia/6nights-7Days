@@ -38,7 +38,7 @@ export default function Pricing({ onOpenLeadForm }: PricingProps) {
                             className="font-display text-5xl md:text-6xl font-bold"
                             style={{ color: 'oklch(0.88 0.1 80)' }}
                         >
-                            ₹18,999
+                            ₹13,499
                         </span>
                         <span className="font-body text-white/80 text-lg mb-2">/ person</span>
                     </div>

@@ -287,7 +287,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     style={{ animationDelay: '0.3s' }}
                 >
                     Starting from{' '}
-                    <span className="font-bold hero-price-text">₹18,999 per person</span>
+                    <span className="font-bold hero-price-text">₹13,499 per person</span>
                     {' '}| Private Cab | 3★ &amp; 4★ Hotels | 24/7 Support
                 </p>
 
