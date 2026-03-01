@@ -108,7 +108,7 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
 
         const packageName = packageInterest && packageInterest !== 'General'
             ? packageInterest
-            : 'Kerala Tour Package (5N/6D)';
+            : 'Kerala Tour Package (4N/5D)';
 
         // Fire-and-forget backend submission (non-blocking)
         submitForm.mutate({
@@ -207,7 +207,7 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
                         <DialogDescription className="text-white/80 text-sm mt-1 font-body">
                             {packageInterest && packageInterest !== 'General'
                                 ? `Enquiring about: ${packageInterest}`
-                                : 'Kerala Tour Package – 5N/6D starting ₹18,999/person'}
+                                : 'Kerala Tour Package – 4N/5D starting ₹8,599/person'}
                         </DialogDescription>
                     </DialogHeader>
                 </div>

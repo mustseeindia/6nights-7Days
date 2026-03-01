@@ -1,12 +1,11 @@
 import { Check, X } from 'lucide-react';
 
 const inclusions = [
-    '5 Nights Accommodation',
+    '4 Nights Accommodation',
     'Daily Breakfast',
     '1 Night Private Houseboat with Meals',
     'Private AC Cab',
     'Sightseeing as per plan',
-    'All Taxes Included',
 ];
 
 const exclusions = [
@@ -15,6 +14,7 @@ const exclusions = [
     'Adventure Activity Charges',
     'Meals Not Mentioned',
     'Early Check-in / Late Check-out Charges',
+    'GST at 5% extra cost'
 ];
 
 export default function Inclusions() {

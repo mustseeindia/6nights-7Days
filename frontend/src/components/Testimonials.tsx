@@ -2,29 +2,29 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
     {
-        name: 'Priya S.',
-        city: 'Bangalore',
-        rating: 5,
-        review:
-            'The private houseboat experience on the Alleppey backwaters was absolutely magical — waking up to misty waters and coconut palms was surreal. IndiaTourPackages handled every detail perfectly. Highly recommend!',
-        trip: 'Kerala 5N/6D Package',
-    },
+    name: 'Sneha R.',
+    city: 'Chennai',
+    rating: 5,
+    review:
+        'This Kerala trip was exactly what we needed for a short romantic getaway. Munnar was beautiful with scenic viewpoints and waterfalls, Thekkady was calm and green, and the houseboat stay was unforgettable. The team was very responsive on WhatsApp and took care of everything. Highly recommended for couples!',
+    trip: 'Kerala 4N/5D Package',
+},
     {
-        name: 'Rahul M.',
-        city: 'Delhi',
-        rating: 5,
-        review:
-            'Munnar\'s tea gardens took our breath away — the rolling green hills and cool mountain air were unlike anything we\'d experienced. Our cab driver was knowledgeable and the hotels were excellent value. Will book again!',
-        trip: 'Kerala Family Tour',
-    },
+    name: 'Rohit S.',
+    city: 'Bangalore',
+    rating: 4,
+    review:
+        'Traveling from Bangalore with family, we wanted a short and comfortable Kerala trip, and this 4N/5D itinerary was perfect. Munnar scenery was stunning, Thekkady added a nice nature experience, and the houseboat stay was unforgettable for the kids. The team was responsive throughout and there were no hidden charges. Would definitely book again.',
+    trip: 'Kerala 4N/5D Package',
+},
     {
-        name: 'Ananya K.',
-        city: 'Mumbai',
-        rating: 5,
-        review:
-            'From the moment we enquired to the final day of our trip, the team was responsive and professional. The itinerary was perfectly paced — not rushed, not boring. Kovalam beach sunset on Day 5 was the highlight!',
-        trip: 'Kerala Honeymoon Package',
-    },
+    name: 'Neha G.',
+    city: 'Delhi',
+    rating: 5,
+    review:
+        'We were honestly surprised at how affordable this 4N/5D Kerala package was compared to other quotes we received. Starting around ₹8,599 per person, it was great value for money without compromising on comfort. The hotels were clean, the cab service was punctual, and the houseboat stay was the highlight of our trip. Traveling from Delhi, we wanted everything smooth and hassle-free, and IndiaTourPackages delivered exactly that. Excellent service and support throughout!',
+    trip: 'Kerala 4N/5D Package',
+},
 ];
 
 function StarRating({ count }: { count: number }) {

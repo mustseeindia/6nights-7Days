@@ -38,11 +38,11 @@ export default function Pricing({ onOpenLeadForm }: PricingProps) {
                             className="font-display text-5xl md:text-6xl font-bold"
                             style={{ color: 'oklch(0.88 0.1 80)' }}
                         >
-                            ₹13,499
+                            ₹8,499
                         </span>
                         <span className="font-body text-white/80 text-lg mb-2">/ person</span>
                     </div>
-                    <p className="font-body text-white/60 text-sm">5 Nights 6 Days | Munnar · Allapey/Kumarakom Houseboat · Kovalam  </p>
+                    <p className="font-body text-white/60 text-sm">4 Nights 5 Days | Munnar · Thekkady · Allapey/Kumarakom Houseboat  </p>
 
                     <div className="mt-6 pt-6 border-t border-white/10 grid grid-cols-2 gap-4 text-left">
                         {[

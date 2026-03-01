@@ -7,10 +7,9 @@ interface ItineraryProps {
 const days = [
     { day: 'Day 1', title: 'Cochin to Munnar', icon: '🌿' },
     { day: 'Day 2', title: 'Munnar Sightseeing', icon: '🍃' },
-    { day: 'Day 3', title: 'Allapey/Kumarakom Houseboat', icon: '⛵' },
-    { day: 'Day 4', title: 'Kovalam', icon: '🌊' },
-    { day: 'Day 5', title: 'Kovalam', icon: '🌊' },
-    { day: 'Day 6', title: 'Departure', icon: '✈️' },
+    { day: 'Day 3', title: 'Thekkady Sightseeing', icon: '🌿' },
+    { day: 'Day 4', title: 'Allapey/Kumarakom Houseboat', icon: '⛵' },
+    { day: 'Day 5', title: 'Departure', icon: '✈️' },
 ];
 
 export default function Itinerary({ onOpenLeadForm }: ItineraryProps) {
@@ -97,12 +96,14 @@ export default function Itinerary({ onOpenLeadForm }: ItineraryProps) {
 
                 {/* CTA */}
                 <div className="text-center mt-8">
-                    <button
-                        onClick={() => onOpenLeadForm('General')}
-                        className="btn-gold px-8 py-3.5 rounded-lg text-base font-bold shadow-card"
-                    >
-                        Customize My Trip →
-                    </button>
+                    <a
+    href="https://www.indiatourpackages.com/detail/kerala-dream-escape-with-houseboat"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-gold px-8 py-3.5 rounded-lg text-base font-bold shadow-card inline-block"
+>
+    View Package →
+</a>
                 </div>
             </div>
         </section>
