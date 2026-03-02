@@ -2,27 +2,30 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
     {
-    name: 'Sneha R.',
-    city: 'Chennai',
-    rating: 5,
-    review:
-        'This Kerala trip was exactly what we needed for a short romantic getaway. Munnar was beautiful with scenic viewpoints and waterfalls, Thekkady was calm and green, and the houseboat stay was unforgettable. The team was very responsive on WhatsApp and took care of everything. Highly recommended for couples!',
-    trip: 'Kerala 4N/5D Package',
-},
-    {
-    name: 'Rohit S.',
-    city: 'Bangalore',
-    rating: 4,
-    review:
-        'Traveling from Bangalore with family, we wanted a short and comfortable Kerala trip, and this 4N/5D itinerary was perfect. Munnar scenery was stunning, Thekkady added a nice nature experience, and the houseboat stay was unforgettable for the kids. The team was responsive throughout and there were no hidden charges. Would definitely book again.',
-    trip: 'Kerala 4N/5D Package',
-},
-    {
-    name: 'Neha G.',
+    name: 'Priya & Arjun M.',
     city: 'Delhi',
     rating: 5,
     review:
-        'We were honestly surprised at how affordable this 4N/5D Kerala package was compared to other quotes we received. Starting around ₹8,599 per person, it was great value for money without compromising on comfort. The hotels were clean, the cab service was punctual, and the houseboat stay was the highlight of our trip. Traveling from Delhi, we wanted everything smooth and hassle-free, and IndiaTourPackages delivered exactly that. Excellent service and support throughout!',
+        'We booked the 6N/7D Kerala tour for our anniversary, and it turned out to be one of our best trips ever. Munnar’s tea gardens and cool weather were refreshing, Thekkady’s wildlife experience was unique, and Alleppey houseboat stay was the highlight — peaceful, scenic, and very romantic. Kovalam beaches were clean and relaxing, and the visit to Trivandrum temples added a cultural touch. Hotels were well chosen, the driver was polite and knowledgeable, and the entire trip was smooth without any stress. The team stayed connected on WhatsApp throughout the journey which gave us a lot of confidence. Definitely worth the money and highly recommended for couples and families.'
+    ,
+    trip: 'Kerala 6N/7D Package',
+},
+    {
+    name: 'Ankit Mehra',
+    city: 'Mumbai',
+    rating: 5,
+    review:
+        'We booked the 6N/7D Kerala tour with our family after comparing multiple options, and this was definitely the right choice. From Munnar’s beautiful tea gardens to Thekkady’s greenery and the peaceful Alleppey houseboat stay, every destination was well planned. Kovalam beach was relaxing, and Trivandrum sightseeing was smooth without any rush. The hotels were clean, comfortable, and safe for family travel. Our driver was very polite and always on time, which made the journey stress-free. What really stood out was the team’s responsiveness on WhatsApp and honest pricing — exactly what was promised was delivered. Traveling from Mumbai with kids can be hectic, but this trip was handled professionally from start to finish. Highly recommended for families looking for a reliable Kerala package.'
+    ,
+    trip: 'Kerala 6N/7D Package',
+},
+   {
+    name: 'Sourav D.',
+    city: 'Kolkata',
+    rating: 5,
+    review:
+        'We booked the 4N/5D Kerala package from Kolkata after seeing multiple options online, and this one offered the best value starting around ₹8,599 per person. Honestly, we were a bit unsure initially because the price was lower than other quotes, but the experience exceeded our expectations. Munnar was scenic and peaceful, Thekkady was refreshing, and the Alleppey houseboat stay was absolutely memorable. Hotels were neat, the driver was courteous, and everything went as planned without any hidden costs. The team stayed connected on WhatsApp throughout the trip which gave us a lot of confidence. It was a smooth, well-managed vacation and definitely worth the money. Highly recommended for anyone looking for an affordable Kerala trip.'
+    ,
     trip: 'Kerala 4N/5D Package',
 },
 ];

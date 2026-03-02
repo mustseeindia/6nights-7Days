@@ -238,7 +238,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
             {/* ── Background image ── */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="./assets/4n5dheader.jpg"
+                    src="./assets/6n7dheader.jpg"
                     alt="Kerala houseboat on backwaters with couple"
                     className="w-full h-full object-cover object-center"
                     loading="eager"
@@ -267,7 +267,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                         animationDelay: '0s',
                     }}
                 >
-                    ✦ Trusted by 10,000+ Travelers | Premium Stays, Private Cab & Zero Hidden Charges.
+                    ✦ Handpicked Hotels, Private AC Cab, Verified Drivers & 24/7 On-Trip Support — 6N/7D Kerala Packages with Transparent Pricing & No Hidden Costs.
                 </div>
 
                 {/* Headline with 3D gradient text effect */}
@@ -275,9 +275,9 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     className={`font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 hero-headline hero-badge-anim ${mounted ? 'hero-visible' : 'hero-hidden'}`}
                     style={{ animationDelay: '0.15s' }}
                 >
-                    4 Nights 5 Days Kerala Tour Package
+                    6 Nights 7 Days Kerala Tour Package
                     <span className="block hero-subline text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2">
-                        Munnar, Thekkady &amp; Houseboat
+                        Munnar, Thekkady , Houseboat &amp; Kovalam
                     </span>
                 </h1>
 
@@ -287,7 +287,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     style={{ animationDelay: '0.3s' }}
                 >
                     Starting from{' '}
-                    <span className="font-bold hero-price-text">₹8,599 per person</span>
+                    <span className="font-bold hero-price-text">₹15,499 per person</span>
                     {' '}| Private Cab | 3★ &amp; 4★ Hotels | 24/7 Support
                 </p>
 
@@ -302,14 +302,12 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     >
                         Get Best Quote in 10 Minutes
                     </button>
-                    <a
-    href="https://www.indiatourpackages.com/detail/kerala-dream-escape-with-houseboat"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-7 py-3.5 rounded-lg text-base font-bold border-2 border-white text-white hover:bg-white/10 transition-colors font-body hero-cta-secondary inline-block"
+                    <button
+    onClick={() => onOpenLeadForm('Kerala 4N/5D Package')}
+    className="px-7 py-3.5 rounded-lg text-base font-bold border-2 border-white text-white hover:bg-white/10 transition-colors font-body hero-cta-secondary"
 >
     Check Availability
-</a>
+</button>
                 </div>
 
                 {/* Urgency */}

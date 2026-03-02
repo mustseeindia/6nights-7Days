@@ -20,6 +20,7 @@ import { CalendarIcon } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 
+
 // Declare global emailjs froçm CDN
 declare global {
     interface Window {
@@ -45,7 +46,7 @@ interface LeadFormModalProps {
     packageInterest: string;
 }
 
-
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 const WHATSAPP_NUMBER = '918197417772';
 
@@ -108,7 +109,7 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
 
         const packageName = packageInterest && packageInterest !== 'General'
             ? packageInterest
-            : 'Kerala Tour Package (4N/5D)';
+            : 'Kerala Tour Package (6N/7D)';
 
         // Fire-and-forget backend submission (non-blocking)
         submitForm.mutate({
@@ -207,7 +208,7 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
                         <DialogDescription className="text-white/80 text-sm mt-1 font-body">
                             {packageInterest && packageInterest !== 'General'
                                 ? `Enquiring about: ${packageInterest}`
-                                : 'Kerala Tour Package – 4N/5D starting ₹8,599/person'}
+                                : 'Kerala Tour Package – 6N/7D starting ₹15,499/person'}
                         </DialogDescription>
                     </DialogHeader>
                 </div>
@@ -252,37 +253,55 @@ export default function LeadFormModal({ isOpen, onClose, packageInterest }: Lead
         Travel Date *
     </Label>
 
-    <Popover>
-        <PopoverTrigger asChild>
-            <Button
-                variant="outline"
-                className={cn(
-                    'w-full h-11 justify-start text-left font-body',
-                    !travelDate && 'text-muted-foreground'
-                )}
-                disabled={isRedirecting}
-            >
-                <CalendarIcon className="mr-2 h-4 w-4" />
-                {travelDate ? format(travelDate, 'dd MMMM yyyy') : 'Select travel date'}
-            </Button>
-        </PopoverTrigger>
+    {(/iPad|iPhone|iPod/.test(navigator.userAgent)) ? (
+        <Input
+            type="date"
+            value={travelDate ? format(travelDate, 'yyyy-MM-dd') : ''}
+            onChange={(e) => {
+                const date = e.target.value ? new Date(e.target.value) : undefined;
+                setTravelDate(date);
+                setValidationError('');
+            }}
+            className="h-11 font-body"
+            disabled={isRedirecting}
+        />
+    ) : (
+        <Popover>
+            <PopoverTrigger asChild>
+                <Button
+                    variant="outline"
+                    className={cn(
+                        'w-full h-11 justify-start text-left font-body',
+                        !travelDate && 'text-muted-foreground'
+                    )}
+                    disabled={isRedirecting}
+                >
+                    <CalendarIcon className="mr-2 h-4 w-4" />
+                    {travelDate ? format(travelDate, 'dd MMMM yyyy') : 'Select travel date'}
+                </Button>
+            </PopoverTrigger>
 
-        <PopoverContent className="w-auto p-0">
-            <Calendar
-                mode="single"
-                selected={travelDate}
-                onSelect={(date) => {
-                    setTravelDate(date);
-                    setValidationError('');
-                }}
-                disabled={(date) =>
-                    date < new Date(new Date().setHours(0, 0, 0, 0))
-                }
-                initialFocus
-            />
-        </PopoverContent>
-    </Popover>
-    <p className="text-xs text-gray-400"> Flexible? Our experts will suggest best dates & prices. </p>
+            <PopoverContent className="w-auto p-3 scale-110 origin-top">
+                <Calendar
+    mode="single"
+    selected={travelDate}
+    onSelect={(date) => {
+        setTravelDate(date);
+        setValidationError('');
+    }}
+    disabled={(date) =>
+        date < new Date(new Date().setHours(0, 0, 0, 0))
+    }
+    className="text-base p-4 [&_td]:p-1 [&_button]:h-10 [&_button]:w-10 [&_button]:text-base"
+    initialFocus
+/>
+            </PopoverContent>
+        </Popover>
+    )}
+
+    <p className="text-xs text-gray-400">
+        Flexible? Our experts will suggest best dates & prices.
+    </p>
 </div>
                         <div className="space-y-1.5">
                             <Label htmlFor="lead-adults" className="text-sm font-semibold font-body text-gray-700">

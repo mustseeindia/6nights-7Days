@@ -27,6 +27,10 @@ const faqs = [
         q: 'How do I confirm my booking?',
         a: 'Submit the enquiry form on this page with your details. Our Kerala travel expert will contact you within 10 minutes to discuss your requirements, finalize the itinerary, and guide you through the booking process.',
     },
+    {
+    q: 'Can I visit Kanyakumari as well with this package?',
+    a: 'Yes, absolutely. We can arrange a Kanyakumari day trip along with your Kerala itinerary at an additional cost. Our team will customize the plan based on your schedule and preferences to ensure a smooth and comfortable experience.',
+},
 ];
 
 export default function FAQ() {

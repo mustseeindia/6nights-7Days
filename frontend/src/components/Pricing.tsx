@@ -38,15 +38,15 @@ export default function Pricing({ onOpenLeadForm }: PricingProps) {
                             className="font-display text-5xl md:text-6xl font-bold"
                             style={{ color: 'oklch(0.88 0.1 80)' }}
                         >
-                            ₹8,499
+                            ₹15,499
                         </span>
                         <span className="font-body text-white/80 text-lg mb-2">/ person</span>
                     </div>
-                    <p className="font-body text-white/60 text-sm">4 Nights 5 Days | Munnar · Thekkady · Allapey/Kumarakom Houseboat  </p>
+                    <p className="font-body text-white/60 text-sm">6 Nights 7 Days | Munnar · Thekkady · Allapey/Kumarakom Houseboat · Kovalam  </p>
 
                     <div className="mt-6 pt-6 border-t border-white/10 grid grid-cols-2 gap-4 text-left">
                         {[
-                            ['5 Nights Stay', '3★ & 4★ Hotels'],
+                            ['6 Nights Stay', '3★ & 4★ Hotels'],
                             ['Private AC Cab', 'Full Trip'],
                             ['Houseboat Night', 'With Meals'],
                             ['Daily Breakfast', 'Included'],
