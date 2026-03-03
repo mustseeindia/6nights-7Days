@@ -302,12 +302,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     >
                         Get Best Quote in 10 Minutes
                     </button>
-                    <button
-    onClick={() => onOpenLeadForm('Kerala 4N/5D Package')}
-    className="px-7 py-3.5 rounded-lg text-base font-bold border-2 border-white text-white hover:bg-white/10 transition-colors font-body hero-cta-secondary"
->
-    Check Availability
-</button>
+            
                 </div>
 
                 {/* Urgency */}
