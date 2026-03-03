@@ -40,13 +40,12 @@ export default function App() {
                 <HeroSection onOpenLeadForm={handleOpenLeadForm} />
 
                 {/* Why Visit Kerala */}
-                <WhyVisitKerala onOpenLeadForm={handleOpenLeadForm} />
+                
 
                 {/* Itinerary */}
-                <Itinerary onOpenLeadForm={handleOpenLeadForm} />
+               
 
                 {/* Inclusions & Exclusions */}
-                <Inclusions />
 
                 {/* Pricing */}
                 <Pricing onOpenLeadForm={handleOpenLeadForm} />
