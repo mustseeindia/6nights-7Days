@@ -1,4 +1,4 @@
-
+import { Phone } from "lucide-react";
 interface RelatedPackagesProps {
     onOpenLeadForm: (packageInterest: string) => void;
 }
