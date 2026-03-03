@@ -106,14 +106,14 @@ export default function RelatedPackages({ onOpenLeadForm }: RelatedPackagesProps
                                             <span className="font-body text-sm font-normal text-gray-400"> /person</span>
                                         </p>
                                     </div>
-                                    <div className="flex gap-4 mt-4">
+                                    <div className="flex gap-2 mt-3">
   {/* Call Now */}
   <a
     href="tel:+918197417772"
-    className="flex-1 h-12 flex items-center justify-center gap-2 px-5 rounded-lg text-white text-[15px] font-medium whitespace-nowrap"
+    className="flex-1 h-9 flex items-center justify-center gap-1.5 px-3 rounded-md text-white text-[13.5px] font-medium whitespace-nowrap"
     style={{ backgroundColor: "#2E3192" }}
   >
-    <Phone size={18} strokeWidth={2.2} />
+    <Phone size={15} strokeWidth={2.2} />
     Call Now
   </a>
 
@@ -124,17 +124,17 @@ export default function RelatedPackages({ onOpenLeadForm }: RelatedPackagesProps
     )}`}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex-1 h-12 flex items-center justify-center gap-2 px-5 rounded-lg text-white text-[15px] font-medium whitespace-nowrap"
-    style={{ backgroundColor: "#1FA855" }}
+    className="flex-1 h-9 flex items-center justify-center gap-1.5 px-3 rounded-md text-white text-[13.5px] font-medium whitespace-nowrap"
+    style={{ backgroundColor: "#25D366" }}
   >
+    {/* Clean WhatsApp SVG (Properly Centered) */}
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 32 32"
-      width="18"
-      height="18"
+      viewBox="0 0 24 24"
+      width="15"
+      height="15"
       fill="white"
     >
-      <path d="M16 .396C7.163.396 0 7.558 0 16.396c0 2.885.76 5.705 2.204 8.188L0 32l7.64-2.162a15.93 15.93 0 0 0 8.36 2.378h.006c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.132a13.07 13.07 0 0 1-6.652-1.82l-.476-.282-4.534 1.284 1.21-4.42-.31-.455A13.06 13.06 0 0 1 2.93 16.4c0-7.21 5.86-13.07 13.07-13.07 7.21 0 13.07 5.86 13.07 13.07 0 7.21-5.86 13.07-13.07 13.07zm7.287-9.822c-.398-.199-2.355-1.162-2.72-1.295-.365-.132-.63-.199-.896.199-.265.398-1.028 1.295-1.26 1.56-.232.265-.465.298-.863.099-.398-.199-1.68-.619-3.2-1.974-1.183-1.055-1.982-2.355-2.214-2.753-.232-.398-.025-.613.174-.812.18-.179.398-.465.597-.697.199-.232.265-.398.398-.663.132-.265.066-.497-.033-.697-.099-.199-.896-2.157-1.228-2.953-.323-.777-.652-.67-.896-.683l-.763-.014c-.265 0-.697.099-1.06.497-.365.398-1.39 1.36-1.39 3.316 0 1.956 1.423 3.848 1.622 4.113.199.265 2.804 4.285 6.8 6.006.952.411 1.695.656 2.274.84.955.304 1.824.261 2.51.158.765-.114 2.355-.962 2.687-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.265-.763-.464z"/>
+      <path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.49 0 .14 5.35.14 11.92c0 2.1.55 4.15 1.6 5.95L0 24l6.3-1.65a11.9 11.9 0 005.76 1.47h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.47-8.42zM12.07 21.6a9.67 9.67 0 01-4.93-1.35l-.35-.21-3.74.98 1-3.64-.23-.37a9.66 9.66 0 01-1.5-5.09c0-5.34 4.35-9.69 9.7-9.69 2.59 0 5.03 1.01 6.86 2.83a9.63 9.63 0 012.83 6.86c0 5.35-4.35 9.7-9.69 9.7zm5.33-7.25c-.29-.15-1.7-.84-1.96-.93-.26-.1-.45-.15-.64.15-.18.29-.73.93-.9 1.12-.17.2-.33.22-.62.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.6-2.01-.17-.29-.02-.45.13-.6.14-.14.29-.37.44-.55.15-.18.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.64-1.54-.88-2.1-.23-.55-.47-.48-.64-.49l-.55-.01c-.18 0-.49.07-.75.37-.26.29-1 1-1 2.44 0 1.44 1.03 2.83 1.18 3.03.15.2 2.03 3.1 4.93 4.35.69.3 1.23.48 1.65.61.69.22 1.32.19 1.81.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/>
     </svg>
     WhatsApp Now
   </a>
