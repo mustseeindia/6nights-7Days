@@ -224,6 +224,19 @@ function ParallaxCanvas() {
 // ─── Main Hero Component ──────────────────────────────────────────────────────
 export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
     const [mounted, setMounted] = useState(false);
+    const firstInputRef = useRef<HTMLInputElement | null>(null);
+    const handleQuoteClick = () => {
+    if (firstInputRef.current) {
+        firstInputRef.current.focus();
+
+        // Add blink animation class
+        firstInputRef.current.classList.add('blink-input');
+
+        setTimeout(() => {
+            firstInputRef.current?.classList.remove('blink-input');
+        }, 1500);
+    }
+};
 
     useEffect(() => {
         const t = setTimeout(() => setMounted(true), 80);
@@ -241,14 +254,13 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     src="./assets/6n7dheader.jpg"
                     alt="Kerala houseboat on backwaters with couple"
                     className="w-full h-full object-cover object-[90%_95%]"
-                    loading="eager"
                 />
                 {/* Deep gradient overlay for legibility */}
                 <div className="absolute inset-0 hero-overlay-houseboat" />
             </div>
 
             {/* ── Three.js 3D Canvas (behind text, no pointer events) ── */}
-        
+            
 
             {/* ── Content ── */}
             <div className="relative z-10 w-full max-w-5xl mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
@@ -262,15 +274,15 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                         animationDelay: '0s',
                     }}
                 >
-                    ✦ Handpicked Hotels, Private AC Cab, Verified Drivers & 24/7 On-Trip Support — 6N/7D Kerala Packages with Transparent Pricing & No Hidden Costs.
+                    ✦ Handpicked Hotels. Private Cab. Trusted Support.
                 </div>
 
                 {/* Headline with 3D gradient text effect */}
-                <h1
-                    className={`font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 hero-headline hero-badge-anim ${mounted ? 'hero-visible' : 'hero-hidden'}`}
-                    style={{ animationDelay: '0.15s' }}
-                >
-                    6 Nights 7 Days Kerala Tour Package
+               <h1
+   className={`font-[Montserrat] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-white hero-badge-anim ${mounted ? 'hero-visible' : 'hero-hidden'}`}
+    style={{ animationDelay: '0.15s' }}
+>
+                    6 Nights 7 Days Kerala Tour 
                     <span className="block hero-subline text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-2">
                         Munnar, Thekkady , Houseboat &amp; Kovalam
                     </span>
@@ -297,7 +309,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                     >
                         Get Best Quote in 10 Minutes
                     </button>
-            
+                    
                 </div>
 
                 {/* Urgency */}
