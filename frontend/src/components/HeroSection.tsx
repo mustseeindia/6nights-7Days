@@ -240,7 +240,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
                 <img
                     src="./assets/6n7dheader.jpg"
                     alt="Kerala houseboat on backwaters with couple"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-[90%_95%]"
                     loading="eager"
                 />
                 {/* Deep gradient overlay for legibility */}
@@ -248,12 +248,7 @@ export default function HeroSection({ onOpenLeadForm }: HeroSectionProps) {
             </div>
 
             {/* ── Three.js 3D Canvas (behind text, no pointer events) ── */}
-            <div
-                className="absolute inset-0 z-[1]"
-                style={{ pointerEvents: 'none' }}
-            >
-                <ParallaxCanvas />
-            </div>
+        
 
             {/* ── Content ── */}
             <div className="relative z-10 w-full max-w-5xl mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
